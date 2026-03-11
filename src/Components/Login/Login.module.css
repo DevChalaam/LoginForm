@@ -1,0 +1,92 @@
+:root {
+    --primary-colors: #1d2d44;
+    --secondary-colors: #3e5c76;
+    --accent-colors: #748cab;
+    --nature-colors1: #0a0908;
+    --nature-colors2: #f8f9fa;
+}
+
+.main_contianer {
+    border: var(--primary-colors) 1px solid;
+    max-width: 500px;
+    height: auto;
+    margin-top: 120px;
+    transition: .4s ease;
+    border-radius: 15px;
+    background-color: var(--primary-colors);
+
+    & .login_topic {
+        margin-top: 49px;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--accent-colors);
+        font-size: 1.2rem;
+    }
+
+    & .form_container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 24px 49px 24px;
+
+        & .form_group {
+            display: flex;
+            flex-direction: column;
+
+            & label {
+                font-size: 1.05rem;
+                color: var(--nature-colors2);
+                margin-left: 10px;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+
+            & input {
+                width: 450px;
+                height: 45px;
+                border-radius: 10px;
+                padding-left: 15px;
+                cursor: pointer;
+                outline: none;
+                border: var(--secondary-colors) 1px solid;
+                margin: 4px 0;
+            }
+        }
+
+        & .button_container {
+            margin: 24px 0;
+            display: flex;
+
+            & .button_submit {
+                width: 400px;
+                height: 50px;
+                cursor: pointer;
+                border: var(--secondary-colors) 1px solid;
+                border-radius: 15px;
+                background-color: var(--secondary-colors);
+                color: var(--nature-colors2);
+                font-size: 0.95rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all .3s ease-in;
+            }
+
+            & .button_submit:hover {
+                border: var(--accent-colors) 1px solid;
+                background-color: var(--accent-colors);
+                color: var(--nature-colors1);
+            }
+        }
+
+        & .span_text {
+            color: var(--nature-colors2);
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            & .link_register {
+                color: var(--accent-colors);
+                text-decoration: none;
+            }
+        }
+    }
+}
