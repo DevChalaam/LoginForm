@@ -1,5 +1,13 @@
 ## FORM LOGIN REACT PORTFOLIO
 
+#### Tools and Framwork
+
+- Visual Studio Code
+- Vite
+- ReactJs
+
+#### How to install project
+
 Open terminal and create vite use command
 
 ```
